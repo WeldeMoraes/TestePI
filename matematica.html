@@ -40,20 +40,23 @@
 
     <script>
      function calculo(){
-
+         
+         // As variaveis a, b e c recebem os valores digitados na tela.
          var a = Number(document.getElementById('tn1').value)
          var b = Number(document.getElementById('tn2').value)
          var c = Number(document.getElementById('tn3').value)
          
-
+         // É feito o calculo de delta e das raízes. 
          var delta = b**2 - 4*a*c
          var x_1 = (-b+delta**0.5)/2*a
          var x_2 = (-b-delta**0.5)/2*a
-
+         
+         // As variaveis del, r1 e r2 recebem o controle dos elementos da árvore.
          var del = document.getElementById('del')
          var r1 = document.getElementById('x1')
          var r2 = document.getElementById('x2')
 
+         // Os elementos da árvore são alterados.
          del.innerText = `O valor de delta é ${delta}`             
          r1.innerText = `O valor de X1 é ${x_1.toFixed(2)}`        
          r2.innerText = `O valor de X2 é ${x_2.toFixed(2)}`
