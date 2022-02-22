@@ -7,7 +7,7 @@
     <title>Equação do segundo grau</title>
     <style>
         body{
-            background: rgb(143, 111, 117);
+            background: rgb(202, 13, 47);
             font: normal 20pt Arial;
         }
         h1{
@@ -40,14 +40,11 @@
 
     <script>
      function calculo(){
-         var an1 = document.getElementById('tn1')
-         var a = Number.parseFloat(an1.value)
 
-         var bn2 = document.getElementById('tn2')
-         var b = Number.parseFloat(bn2.value)
-
-         var cn3 = document.getElementById('tn3')
-         var c = Number.parseFloat(cn3.value)
+         var a = Number(document.getElementById('tn1').value)
+         var b = Number(document.getElementById('tn2').value)
+         var c = Number(document.getElementById('tn3').value)
+         
 
          var delta = b**2 - 4*a*c
          var x_1 = (-b+delta**0.5)/2*a
