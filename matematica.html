@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equação do segundo grau</title>
+    <style>
+        body{
+            background: rgb(143, 111, 117);
+            font: normal 20pt Arial;
+        }
+        h1{
+            font: bolder 30pt Arial;
+        }
+        input{
+            font: normal 30pt;
+            width: 80px;
+            height: 30px;
+        }
+        div{
+         margin-top: 20px;   
+        }
+    </style>
+</head>
+<body>
+    <h1>Resolvendo uma equação do segundo grau</h1>
+    <p>Vamos resolver uma equação do segundo grau? Ela pode ser representada por <strong>ax²+bx+c=0</strong>, os coeficientes <strong>a, b </strong> e <strong>c</strong> são números reais com <strong>a ≠ 0</strong>.</p>
+
+    <strong>a = </strong><input type="number" name="tn1" id="tn1"> ;
+    <strong>b = </strong><input type="number" name="tn2" id="tn2"> ;
+    <strong>c = </strong><input type="number" name="tn3" id="tn3">
+    
+    <input type="button" value="Calcular" onclick="calculo()">
+
+    <div id="del">Delta</div>
+    <div id="x1">Raíz_1</div>
+    <div id="x2">Raíz_2</div>
+
+
+    <script>
+     function calculo(){
+         var an1 = document.getElementById('tn1')
+         var a = Number.parseFloat(an1.value)
+
+         var bn2 = document.getElementById('tn2')
+         var b = Number.parseFloat(bn2.value)
+
+         var cn3 = document.getElementById('tn3')
+         var c = Number.parseFloat(cn3.value)
+
+         var delta = b**2 - 4*a*c
+         var x_1 = (-b+delta**0.5)/2*a
+         var x_2 = (-b-delta**0.5)/2*a
+
+         var del = document.getElementById('del')
+         del.innerText = `O valor de delta é ${delta}`
+
+         var r1 = document.getElementById('x1')
+         r1.innerText = `O valor de X1 é ${x_1.toFixed(2)}`
+
+         var r2 = document.getElementById('x2')
+         r2.innerText = `O valor de X2 é ${x_2.toFixed(2)}`
+     }
+    </script>
+</body>
+</html>
