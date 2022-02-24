@@ -7,16 +7,21 @@
     <title>Equação do segundo grau</title>
     <style>
         body{
-            background: rgb(202, 13, 47);
-            font: normal 20pt Arial;
+            background:rgb(250, 235, 215);
+            font: normal 30pt Arial;
+            color: rgb(5, 5, 73);
         }
         h1{
-            font: bolder 30pt Arial;
+            background-color: rgb(5, 5, 73);
+            height: 150px;
+            font: bolder 70pt Arial;
+            color: antiquewhite;
+            text-align: center;
         }
         input{
-            font: normal 30pt;
-            width: 80px;
-            height: 30px;
+            font: normal 80pt;
+            width: 150px;
+            height: 70px;
         }
         div{
          margin-top: 20px;   
@@ -24,14 +29,14 @@
     </style>
 </head>
 <body>
-    <h1>Resolvendo uma equação do segundo grau</h1>
-    <p>Vamos resolver uma equação do segundo grau? Ela pode ser representada por <strong>ax²+bx+c=0</strong>, os coeficientes <strong>a, b </strong> e <strong>c</strong> são números reais com <strong>a ≠ 0</strong>.</p>
+    <h1>Equação do segundo grau</h1>
+    <p style="font: bold 50pt Arial;"><strong>ax²+bx+c=0</strong></strong></p>
 
-    <strong>a = </strong><input type="number" id="tn1"> ;
-    <strong>b = </strong><input type="number" id="tn2"> ;
-    <strong>c = </strong><input type="number" id="tn3">
+    <strong style="font: normal 40pt Arial;">a = </strong><input style="font: normal 40pt Arial;" type="number" id="tn1"> ;
+    <strong style="font: normal 40pt Arial;">b = </strong><input style="font: normal 40pt Arial;" type="number" id="tn2"> ;
+    <strong style="font: normal 40pt Arial;">c = </strong><input style="font: normal 40pt Arial;" type="number" id="tn3">
     
-    <input type="button" value="Calcular" onclick="calculo()">
+    <input style="font: normal 40pt Arial;" type="button" value="Calc" onclick="calculo()">
 
     <div id="del">Delta</div>
     <div id="x">Raízes</div>
