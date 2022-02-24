@@ -34,8 +34,8 @@
     <input type="button" value="Calcular" onclick="calculo()">
 
     <div id="del">Delta</div>
-    <div id="x1">Raíz_1</div>
-    <div id="x2">Raíz_2</div>
+    <div id="x">Raízes</div>
+    
 
 
     <script>
@@ -50,16 +50,31 @@
          var delta = b**2 - 4*a*c
          var x_1 = (-b+delta**0.5)/2*a
          var x_2 = (-b-delta**0.5)/2*a
-         
-         // As variaveis del, r1 e r2 recebem o controle dos elementos da árvore.
-         var del = document.getElementById('del')
-         var r1 = document.getElementById('x1')
-         var r2 = document.getElementById('x2')
 
-         // Os elementos da árvore são alterados.
+         
+         
+         
+         // As variaveis del e r recebem o controle dos elementos da árvore.
+         var del = document.getElementById('del')
+         var r = document.getElementById('x')
+        
+
          del.innerText = `O valor de delta é ${delta}`             
-         r1.innerText = `O valor de X1 é ${x_1.toFixed(2)}`        
-         r2.innerText = `O valor de X2 é ${x_2.toFixed(2)}`
+
+
+         if (delta < 0){
+             r.innerText = 'As raízes estão fora do conjunto dos números reais.'
+         }
+
+         else if (delta === 0){
+            r.innerText = `As raízes X1 e X2 são iguais e valem, ${x_1.toFixed(1)}`
+         }
+
+         else {
+             r.innerText = `As raízes X1 e X2 valem, respectivamente, ${x_1.toFixed(1)} e ${x_2.toFixed(1)}`
+         }
+
+         
      }
     </script>
 </body>
