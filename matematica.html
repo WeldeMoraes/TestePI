@@ -74,19 +74,10 @@
          del.innerText = `O valor de delta é ${delta}`             
 
 
-         if (delta < 0){
-             r.innerText = 'As raízes estão fora do conjunto dos números reais.'
-         }
-
-         else if (delta === 0){
-            r.innerText = `As raízes X1 e X2 são iguais e valem, ${x_1.toFixed(1)}`
-         }
-
-         else {
-             r.innerText = `As raízes X1 e X2 valem, respectivamente, ${x_1.toFixed(1)} e ${x_2.toFixed(1)}`
-         }
-
-         
+         if (delta < 0){ r.innerText = 'As raízes estão fora do conjunto dos números reais.' }
+         else if (delta === 0){ r.innerText = `As raízes X1 e X2 são iguais e valem, ${x_1.toFixed(1)}` }
+         else { r.innerText = `As raízes X1 e X2 valem, respectivamente, ${x_1.toFixed(1)} e ${x_2.toFixed(1)}` }
+        
      }
     </script>
 </body>
