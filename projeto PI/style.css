@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html,body{
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+header{
+    height: 130px; 
+    padding: 20px 0;
+    box-shadow: 0px 0px 10px black;
+}
+
+.central{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.logo{
+    width: 20%;
+    
+}
+
+.busca{
+    
+    width: 50%;
+    padding-top: 30px;
+    font: bold 15pt Verdana;
+}
+
+.inp{
+    width: 85%;
+    height: 50px;
+    border-radius: 20px;
+    font: normal 15pt Verdana;
+}
+
+.menu{
+    
+    padding-top: 40px;
+    width: 30%;
+    text-align: right;
+    
+}
+
+.menu a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+section.sobre{
+    position: relative;
+    
+    height: calc(100% - 130px);
+
+}
+
+.extras{
+    position: absolute;
+    bottom: -550px;
+    right: -600px;
+    width: 1280px;
+    height: 1050px;
+    border-radius: 50%;
+    background: url("bandeira.jpg");
+}
+
+.apresentacao{
+    position: absolute;
+    margin: 80px 0 0 100px;
+    line-height: 30pt;
+    
+}
